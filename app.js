@@ -389,33 +389,329 @@
 // else {
 //     document.write("Temperature is less than 10.");
 // }
-//11
-var num1=prompt("Enter first number: ");
-var num2=prompt("Enter second number: ");
-var operator=prompt("Enter operator: ");
-num1=(+num1);
-num2=(+num2);
+// //11
+// var num1=prompt("Enter first number: ");
+// var num2=prompt("Enter second number: ");
+// var operator=prompt("Enter operator: ");
+// num1=(+num1);
+// num2=(+num2);
 
-if(operator=="+"){
-    var sum=num1+num2;
-    document.write("Addition of " + num1 + " and " + num2 + " is : "+(num1+num2));
-}
-else if (operator=="-"){
-    var sum=num1-num2;
-    document.write("Subtraction of " + num1 + " and " + num2 + " is : "+(num1-num2));
-}
-else if(operator=="*"){
-    var sum=num1*num2;
-    document.write("Multiplication of " + num1 + " and " + num2 + " is : "+(num1*num2));
-}
-else if(operator=="/"){
-    var sum=num1/num2;
-    document.write("Division of " + num1 + " and " + num2 + " is : "+(num1/num2));
-}
-else if(operator=="%"){
-    document.write("Moduler of " + num1 + " and " + num2 + " is : "+(num1%num2));
-}
-else {
-    document.write("You entered a wrong number.");
-}
+// if(operator=="+"){
+//     var sum=num1+num2;
+//     document.write("Addition of " + num1 + " and " + num2 + " is : "+(num1+num2));
+// }
+// else if (operator=="-"){
+//     var sum=num1-num2;
+//     document.write("Subtraction of " + num1 + " and " + num2 + " is : "+(num1-num2));
+// }
+// else if(operator=="*"){
+//     var sum=num1*num2;
+//     document.write("Multiplication of " + num1 + " and " + num2 + " is : "+(num1*num2));
+// }
+// else if(operator=="/"){
+//     var sum=num1/num2;
+//     document.write("Division of " + num1 + " and " + num2 + " is : "+(num1/num2));
+// }
+// else if(operator=="%"){
+//     document.write("Moduler of " + num1 + " and " + num2 + " is : "+(num1%num2));
+// }
+// else {
+//     document.write("You entered a wrong number.");
+// }
+
+//chapter 12-13
+// //1
+// var check = prompt ("Enter any number or character: ");
+// if (check =>"0" || check <="9"){
+//     document.write ("Input is Number");
+// }
+// else if (check=>"a" || check <="z"){
+// document.write ("Input is Lower Case Character");
+// }
+// else if (check=>"A" || check <="Z"){
+//     document.write ("Input is Upper Case Character");
+// }
+// else {
+//     document.write ("Wrong Input");
+// }
+
+// //2
+// var number1 = prompt("Enter first integer: ");
+// var number2 = prompt("Enter second integer: ");
+// number1=(+number1);
+// number2=(+number2);
+// if(number1>number2){
+//     document.write(number1+" is larger than "+number2);
+// }
+// else if (number1<number2){
+//     document.write(number2+" is larger than "+number1);
+// }
+// else if (number1===number2){
+//     document.write(number1+" and "+number2+" are equal.");
+// }
+
+// //3
+// var number = prompt("Enter any integer: ");
+// number=(+number);
+// if(number===0){
+//     document.write(number+" is Zero");
+// }
+// else if (number>0){
+//     document.write(number+" is Positive");
+// }
+// else if (number<0){
+//     document.write(number+" is Negative");
+// }
+// else {
+//     document.write("Wrong Input");
+// }
+
+// //4
+// var check = prompt("Enter a single character: ");
+// if(check=="a"||check=="e"||check=="i"||check=="o"||check=="u"){
+//     document.write(check+" is a vowel.");
+// }
+// else if(check=="A"||check=="E"||check=="I"||check=="O"||check=="U"){
+//     document.write(check+" is a vowel.");
+// }
+// else{
+//     document.write(check +" is a consonent");
+// }
+
+// //5
+// var storedPassword = "Danish";
+// var userPassword = prompt("Enter your password: ");
+// if (userPassword==null||userPassword===undefined||userPassword.length <=0){
+//      document.write("Please enter your password")
+// }
+// else if (userPassword===storedPassword){
+//     document.write("Correct! The password you entered matches the original password")
+// }
+// else {
+//     document.write("Your entered password is incorrect.");
+// }
+
+// //6
+// var greeting;
+// var hour = 19;
+// if (hour < 18) {
+//     greeting = "Good day"; 
+//     prompt(greeting);
+// }
+
+// else {
+//     greeting = "Good evening"; 
+//     prompt(greeting);
+// }
+
+//7
+// var time = prompt("Enter time (format 0000): ");
+// time=(+time);
+// if(time>=0000 && time<1200){
+//     document.write("Good Morning!")
+// }
+// else if (time>=1200 && time<1700){
+//     document.write("Good Afternoon!")
+// }
+// else if (time>=1700 && time<2100){
+//     document.write("Good Evening!")
+// }
+// else if (time>=2100 && time<2359){
+//     document.write("Good Night!")
+// }
+// else {
+//     document.write("Wrong Input");
+// }
+
+//Chapter 14-16
+
+// //1 var emptyArray = [];
+// //3 var stringArray=["Cat", "Dog", "Snake"];
+// //4 var numberArray=[1,2,3,4,5];
+// //5 var booleanArray=[true, false];
+// //6 var mixedArray = [1, "Bob", "Now is", true];
+// //7 
+// var qualifications=["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil", "PhD"];
+// for (var i=0; i<qualifications.length; i++){
+//     var text="<ol>";
+//     document.write("<li>"+qualifications[i]+"</li> <br>");
+//     text=text+"</ol>";
+// }
+
+// //8
+// var stuName=["Danish", "Waqas", "Frrukh"];
+// var stuMarks=[88,78,58];
+// var totalMarks = 500;
+// for (var i=0; i<stuName.length;i++){
+//     document.write("Score of "+stuName[i]+" is "+stuMarks[i]+". Percentage: "+stuMarks[i]*100/totalMarks+"% <br>");
+// }
+
+// //9
+// var colour=["red","green","blue"];
+// document.write(colour+'<br>');
+// //a
+// var addColourStart=prompt("what colour you want to add in the begining: ");
+// colour.unshift(addColourStart);
+// document.write(colour+'<br>');
+// //b
+// var addColourEnd=prompt("what colour you want to add in the end: ");
+// colour.push(addColourEnd);
+// document.write(colour+'<br>');
+// //c
+// colour.unshift("Yellow","Black");
+// document.write(colour+'<br>');
+// //d
+// colour.shift();
+// colour.shift();
+// document.write(colour+'<br>');
+// //e
+// colour.pop();
+// colour.pop();
+// document.write(colour+'<br>');
+// //f
+// var addColourName=prompt("what colour you want to add: ");
+// var addColourPosition=prompt("at which position: ");
+// addColourPosition=(+addColourPosition);
+// colour.splice(addColourPosition,0,addColourName);
+// document.write(colour+'<br>');
+// //g
+// var delColourPosition=prompt("what index do you want to delete colour: ");
+// var delColourCount=prompt("how many colours want to delete: ");
+// delColourPosition=(+delColourPosition);
+// delColourCount=(+delColourCount);
+// colour.splice(delColourPosition,delColourCount);
+// document.write(colour+'<br>');
+
+// //10
+// var unSorted =[320, 230, 480, 120];
+// document.write(unSorted+"<br>");
+// unSorted.sort();
+// document.write(unSorted+"<br>");
+
+// //11
+// var cities=["Karachi", "Lahore", "Islambad", "Quetta", "Peshawar"];
+// document.write(cities+"<br>");
+// var selectedCities=cities.slice(0,2);
+// document.write(cities+"<br>");
+// document.write(selectedCities+"<br>");
+
+// //12
+// var arry=["My","Name","is","Danish"];
+// arry.join();
+// document.write(arry+"<br>");
+// arry.join(' ');
+// document.write(arry+"<br>");
+
+// //13
+// var devices=["keyboard", "mouse","printer","monitor"];
+// document.write(devices+"<br>");
+// for(var i=0;i<devices.length+1;i++){
+//     devices.shift();
+//     document.write(devices+"<br>");
+// }
+
+// //14
+// var devices=["keyboard", "mouse","printer","monitor"];
+// document.write(devices+"<br>");
+// for(var i=0;i<devices.length+1;i++){
+//     devices.pop();
+//     document.write(devices+"<br>");
+// }
+
+// //15
+// var phonesManufacters=["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+// document.write ("<select>");
+// for(var i=0;i<phonesManufacters.length;i++){
+// document.write("<option>"+phonesManufacters[i]+"</option>");
+// }
+// document.write ("</select>");
+
+//Chapter 17-20
+// //1
+// var arry=[[],[],[]];
+// //2
+// var arry=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+// document.write(arry[0]+"<br>");
+// document.write(arry[1]+"<br>");
+// document.write(arry[2]+"<br>");
+// //3
+// var i=1;
+// for (i;i<=10;i++){
+//     document.write(i+"<br>");
+// }
+// //4
+// var tableNumber=prompt("Enter a number to show its multiplication table: ");
+// var tableMultiplication=prompt("Enter length muliplication table: ");
+// tableNumber=(+tableNumber);
+// tableMultiplication=(+tableMultiplication);
+// for (var i=1; i<=tableMultiplication; i++){
+//         document.write(tableNumber+" X "+i+" = "+tableNumber*i+"<br>");
+//  }
+
+// //5
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+// for (var i=0;i<fruits.length;i++){
+//     document.write('Element at index '+i+' is '+fruits[i]+'<br>');
+// }
+
+// //6
+// var counting=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+// document.write("Counting: "+counting+"<br>");
+// counting.reverse();
+// document.write("Reverse Counting: "+counting+"<br>");
+// counting.reverse();
+// document.write("Even Counting: ");
+// for(var i=0; i<counting.length;i++){
+//     if(counting[i]%2===0){       
+//         document.write(counting[i]+",");
+//     }
+// }
+// document.write("<br> Odd Counting: ");
+// for(var i=0; i<counting.length;i++){
+//     if(counting[i]%2!==0){
+//         document.write(counting[i]+",");
+//     }
+// }
+// document.write("<br> Series: ");
+// for(var i=0; i<counting.length;i++){
+//     if(counting[i]%2===0){       
+//         document.write(counting[i]+"k,");
+//     }
+// }
+
+// //7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var search=prompt("Welcome to DH Bakery! What do you want to order Sir/Madam: ");
+//     if(A.indexOf(search)!==-1){
+//         document.write("<br>"+search+" is found");
+//     }
+//     else {
+//         document.write("<br>"+search+" is not found");
+//     }
+
+// //8
+// var A = [24, 53, 78, 91, 12];
+// var largest=0;
+// for (i=0; i<=A.length;i++){
+//     if (A[i]>largest) {
+//         largest=A[i];
+//     }
+// }
+// document.write("Largest numbers is: "+largest);
+
+// //9
+// var A = [24, 53, 78, 91, 12];
+// var smallest=A[0];
+// for (i=0; i<=A.length;i++){
+//     if (A[i]<smallest) {
+//         smallest=A[i];
+//     }
+// }
+// document.write("Largest numbers is: "+smallest);
+
+// //10
+// var number=5;
+// for (var i=1;i<=20;i++){
+//     document.write(number*i+",");
+// }
 
